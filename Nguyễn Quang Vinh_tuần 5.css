@@ -117,7 +117,7 @@ input {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        border-bottom: 5px solid red;
+        border-bottom: 5px solid whitesmoke;
         background-color: blue;
 
     }
