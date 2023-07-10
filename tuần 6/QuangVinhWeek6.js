@@ -14,41 +14,55 @@ var stringNumber3="tuyệt đối";
 this.document.write(stringNumber1+stringNumber2+stringNumber3+"<br>");
 //5
 var result;
-result=radius*radius*PI;
+result=Math.pow(radius,2)*PI;
 this.document.write("Diện tích hình tròn :"+result+"<br>");
 //6
 // tên của bạn 
-var nameOfFriend1="Minh";
-var nameOfFriend2="Hoàng";
-var nameOfFriend3="Tùng";
-var nameOfFriend4="Nhân";
-var nameOfFriend5="Nam";
-//tuổi của bạn
-var ageOfFriend1=18;
-var ageOfFriend2=19;
-var ageOfFriend3=20;
-var ageOfFriend4=21;
-var ageOfFriend5=22;
+var friendA={
+    name:"A",
+    age:18
+}
+var friendB={
+    name:"Minh",
+    age:19
+}
+var friendC={
+    name:"Hoàng",
+    age:20
+}
+var friendD={
+    name:"Nhân",
+    age:21
+}
+var friendE={
+    name:"Tâm",
+    age:22
+}
+
+
+
 //nối tên và tuổi
-this.document.write("Tên: "+nameOfFriend1+" Tuổi: "+ageOfFriend1+"<br>");
-this.document.write("Tên: "+nameOfFriend2+" Tuổi: "+ageOfFriend2+"<br>");
-this.document.write("Tên: "+nameOfFriend3+" Tuổi: "+ageOfFriend3+"<br>");
-this.document.write("Tên: "+nameOfFriend4+" Tuổi: "+ageOfFriend4+"<br>");
-this.document.write("Tên: "+nameOfFriend5+" Tuổi: "+ageOfFriend5+"<br>");
+this.document.write("Tên: "+friendA.name+" Tuổi: "+friendA.age+"<br>");
+this.document.write("Tên: "+friendB.name+" Tuổi: "+friendB.age+"<br>");
+this.document.write("Tên: "+friendC.name+" Tuổi: "+friendC.age+"<br>");
+this.document.write("Tên: "+friendD.name+" Tuổi: "+friendD.age+"<br>");
+this.document.write("Tên: "+friendE.name+" Tuổi: "+friendE.age+"<br>");
+
 //in chieu dai ten
+
 var char ="a";
-result= nameOfFriend1.length;
+result= friendA.name.length;
 this.document.write("chiều dài tên: "+result+"<br>");
-result= nameOfFriend2.length;
+result= friendB.name.length;
 this.document.write("chiều dài tên: "+result+"<br>");
-result= nameOfFriend3.length;
+result= friendC.name.length;
 this.document.write("chiều dài tên: "+result+"<br>");
-result= nameOfFriend4.length;
+result= friendD.name.length;
 this.document.write("chiều dài tên: "+result+"<br>");
-result= nameOfFriend5.length;
+result= friendE.name.length;
 this.document.write("chiều dài tên: "+result+"<br>");
 //in tuoi trung binh
-result=(ageOfFriend1+ ageOfFriend2+ ageOfFriend3+ageOfFriend4+ageOfFriend5)/5
+result=(friendA.age+ friendB.age+ friendC.age+friendD.age+friendE.age)/5
 this.document.write("Tuổi trung bình : "+result+"<br>");
 //in ra màn hình tổng số tuổi
 result *=5;
