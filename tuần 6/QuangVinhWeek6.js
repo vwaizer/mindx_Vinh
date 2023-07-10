@@ -50,21 +50,20 @@ this.document.write("Tên: "+friendE.name+" Tuổi: "+friendE.age+"<br>");
 
 //in chieu dai ten
 
-var char ="a";
-result= friendA.name.length;
-this.document.write("chiều dài tên: "+result+"<br>");
-result= friendB.name.length;
-this.document.write("chiều dài tên: "+result+"<br>");
-result= friendC.name.length;
-this.document.write("chiều dài tên: "+result+"<br>");
-result= friendD.name.length;
-this.document.write("chiều dài tên: "+result+"<br>");
-result= friendE.name.length;
-this.document.write("chiều dài tên: "+result+"<br>");
+var resultA= friendA.name.length;
+this.document.write("chiều dài tên: "+resultA+"<br>");
+var resultB= friendB.name.length;
+this.document.write("chiều dài tên: "+resultB+"<br>");
+var resultC= friendC.name.length;
+this.document.write("chiều dài tên: "+resultC+"<br>");
+var resultD= friendD.name.length;
+this.document.write("chiều dài tên: "+resultD+"<br>");
+var resultE= friendE.name.length;
+this.document.write("chiều dài tên: "+resultE+"<br>");
 //in tuoi trung binh
-result=(friendA.age+ friendB.age+ friendC.age+friendD.age+friendE.age)/5
-this.document.write("Tuổi trung bình : "+result+"<br>");
+var resultAvegareAge=(friendA.age+ friendB.age+ friendC.age+friendD.age+friendE.age)/5
+this.document.write("Tuổi trung bình : "+resultAvegareAge+"<br>");
 //in ra màn hình tổng số tuổi
-result *=5;
-this.document.write("tổng số tuổi: "+result+"<br>");
+resultTotalAge =resultAvegareAge*5;
+this.document.write("tổng số tuổi: "+resultTotalAge+"<br>");
 
