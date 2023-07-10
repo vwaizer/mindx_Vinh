@@ -95,10 +95,20 @@ input {
         flex-direction: column-reverse;
         justify-content: flex-start;
         
-        height: 1000px;
+        height: 100%;
         width: 100%;
     }
-
+    .container5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .context {
+        border: 2px dashed black;
+        padding: 20px;
+        height: 300px;
+    }
     .container2 {
         display: flex;
         flex-direction: column;
@@ -121,7 +131,9 @@ input {
         width: 100%;
 
     }
-
+    input{
+        border-radius: 15px;
+    }
     .container0 {
         width: 100%;
         display: flex;
