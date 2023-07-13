@@ -53,7 +53,9 @@ function CheckPositiveOrNegative(){
         if(checkNumber<0){
             document.getElementById("resultCheckPositiveOrNegative").innerHTML = "Negative";
         }
+        else{
         document.getElementById("resultCheckPositiveOrNegative").innerHTML = "Not Positive And Negative";
+        }
     }
 }
 function Calculate(){
