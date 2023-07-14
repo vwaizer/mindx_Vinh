@@ -55,8 +55,9 @@
 {
     let input = "12";
     let result = "0";
+    
     if (input <= 0 || typeof input != "number") {
-        console.log("không có số chính phương");
+        console.log(" không có số chính phương");
     }
     else {
         for (let i = 1; i <= input; i++) {
