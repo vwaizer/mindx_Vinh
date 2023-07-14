@@ -1,9 +1,9 @@
 //1
 {
     let NOfQuestion1 = 3.15569;
-
+   
     if (typeof NOfQuestion1 == "number") {
-        if (Math.abs(Math.floor(NOfQuestion1) - NOfQuestion1) < 1) {
+        if (NOfQuestion1-(Math.ceil(NOfQuestion1)) < 1) {
             console.log(NOfQuestion1 + " không là số nguyên");
         }
         else {
