@@ -83,8 +83,13 @@ const secondObjectArray=[
 ]
 
 function returnObjectValue(secondObjectArray,weekNumber){
-    let resultOfFunction  = secondObjectArray[0].homework[0][weekNumber]
+    let resultOfFunction  
+    switch (weekNumber){
+        case 1: resultOfFunction=secondObjectArray[0].homework[0].Week1;break;
+        case 2: resultOfFunction=secondObjectArray[0].homework[1].Week2;break;
+        case 3: resultOfFunction=secondObjectArray[0].homework[2].Week3;break;
+    }
     return "cauA: "+resultOfFunction.cauA+" cauB:"+resultOfFunction.cauB
 }
-this.document.write("<br>"+returnObjectValue(secondObjectArray,'Week1'))
+this.document.write("<br>"+returnObjectValue(secondObjectArray,3))
 
