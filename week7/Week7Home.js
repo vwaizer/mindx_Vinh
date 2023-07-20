@@ -34,7 +34,7 @@
 //3
 {
     this.document.write("<br>3<br>")
-    let numberOfQuestion3 = 15;
+    let numberOfQuestion3 = 20;
 
     if (numberOfQuestion3 % 3) {
         this.document.write(numberOfQuestion3 + " không chia hết cho 3 và 5")

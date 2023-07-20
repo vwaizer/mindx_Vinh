@@ -59,23 +59,23 @@ const secondObjectArray=[
         name:"Ngoc",
         homework:
         [
-            {Week1:
-                {
+            {
+                
                     cauA:2,
                     cauB:3
-                }
+                
             },
-            {Week2:
-                {
+            {
+                
                     cauA:4,
                     cauB:5
-                }
+                
             },
-            {Week3:
-                {
+            {
+                
                     cauA:6,
                     cauB:7
-                }
+                
             }
         ]
 
@@ -83,13 +83,19 @@ const secondObjectArray=[
 ]
 
 function returnObjectValue(secondObjectArray,weekNumber){
-    let resultOfFunction  
-    switch (weekNumber){
-        case 1: resultOfFunction=secondObjectArray[0].homework[0].Week1;break;
-        case 2: resultOfFunction=secondObjectArray[0].homework[1].Week2;break;
-        case 3: resultOfFunction=secondObjectArray[0].homework[2].Week3;break;
-    }
-    return "cauA: "+resultOfFunction.cauA+" cauB:"+resultOfFunction.cauB
+     let resultOfFunction =[] 
+    // switch (weekNumber){
+    //     case 1: resultOfFunction=secondObjectArray[0].homework[0].Week1;break;
+    //     case 2: resultOfFunction=secondObjectArray[0].homework[1].Week2;break;
+    //     case 3: resultOfFunction=secondObjectArray[0].homework[2].Week3;break;
+    // }
+    // return "cauA: "+resultOfFunction.cauA+" cauB:"+resultOfFunction.cauB
+    secondObjectArray[0].homework.forEach(item => {
+        resultOfFunction.push( item.cauA +" "+ item.cauB)
+        
+    })
+    console.log(resultOfFunction)
 }
-this.document.write("<br>"+returnObjectValue(secondObjectArray,3))
+// this.document.write("<br>"+returnObjectValue(secondObjectArray,3))
+this.document.write(secondObjectArray)
 
