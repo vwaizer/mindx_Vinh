@@ -25,7 +25,7 @@ let newArray = [
 ]
 function newArrayFunction(newArray) {
  
-    let resultObject = []
+    let resultObject = {}
     let onlyObject = {}
 
    
@@ -44,7 +44,7 @@ function newArrayFunction(newArray) {
          }
         
         
-        resultObject.push(onlyObject)
+        Object.assign(resultObject,onlyObject)
         
          onlyObject={}
 
