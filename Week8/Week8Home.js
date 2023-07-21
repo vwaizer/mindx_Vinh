@@ -24,59 +24,11 @@ let newArray = [
     ["Bai_04", "Bai_03", "Bai_02", "Bai_01"]
 ]
 function newArrayFunction(newArray) {
-    // let firstObject={}
-    // let secondObject={}
-    // let thirdObject={}
-    // let fourthObject={}
-    // let fifthObject={}
+ 
     let resultObject = []
     let onlyObject = {}
 
-    // Object.defineProperty(firstObject, proObject, {
-    //     value: newArray[0][1],
-    //     enumerable: true // set lại giá trị
-    // });
-    // Object.defineProperty(firstObject, newArray[0][2], {
-    //     value: newArray[0][3],
-    //     enumerable: true // set lại giá trị
-    // });
-    // let lengthOfFirstRow= newArray[0].length;
-    //     for(let l =0 ;l<lengthOfFirstRow-1;l++){
-    //         Object.defineProperty(firstObject,newArray[0][l],{
-    //             value: newArray[0][l+1],
-    //             enumerable: true
-    //         });
-    //     }
-
-    //     let lengthOfSecondRow= newArray[1].length;
-    //     for(let l =0 ;l<lengthOfSecondRow-1;l++){
-    //         Object.defineProperty(secondObject,newArray[1][l],{
-    //             value: newArray[1][l+1],
-    //             enumerable: true
-    //         });
-    //     }
-    //     let lengthOfThirdRow= newArray[2].length;
-    //     for(let l =0 ;l<lengthOfThirdRow-1;l++){
-    //         Object.defineProperty(thirdObject,newArray[2][l],{
-    //             value: newArray[2][l+1],
-    //             enumerable: true
-    //         });
-    //     }
-    //     let lengthOfFourthRow= newArray[3].length;
-    //     for(let l =0 ;l<lengthOfFourthRow-1;l++){
-    //         Object.defineProperty(fourthObject,newArray[3][l],{
-    //             value: newArray[3][l+1],
-    //             enumerable: true
-    //         });
-    //     }
-    //     let lengthOfFifthRow= newArray[4].length;
-    //     for(let l =0 ;l<lengthOfFifthRow-1;l++){
-    //         Object.defineProperty(fifthObject,newArray[4][l],{
-    //             value: newArray[4][l+1],
-    //             enumerable: true
-    //         });
-
-    //     }
+   
     newArray.forEach(item => {
         console.log(item.length)
          let itemLength=item.length
@@ -87,17 +39,17 @@ function newArrayFunction(newArray) {
                  value: item[b],
                  enumerable: true
              })
-              console.log(onlyObject)
+            //   console.log(onlyObject)
            
          }
         
         
         resultObject.push(onlyObject)
-        console.log(resultObject)
+        
          onlyObject={}
 
     })
-    // resultObject.push(firstObject,secondObject,thirdObject,fourthObject,fifthObject);
+    console.log(resultObject)
     
 
 }
