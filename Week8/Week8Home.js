@@ -30,7 +30,7 @@ function newArrayFunction(newArray) {
 
    
     newArray.forEach(item => {
-        console.log(item.length)
+        
          let itemLength=item.length
          for(let i =0;i<itemLength;i=i+1) {
                 let b=i+1;
