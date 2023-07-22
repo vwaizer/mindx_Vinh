@@ -63,6 +63,8 @@ let homeObject=this.document.getElementById("Home");
 homeObject.addEventListener("click",function(){
     document.getElementById("context2").innerHTML=``
     document.getElementById("context2").style.backgroundColor=""
+    document.getElementById("context1").innerHTML="";
+    document.getElementById("context1").style.color="";
 })
 
 let inputObject=this.document.getElementsByClassName("input")
