@@ -1,21 +1,4 @@
-const array = [
-    [{ name: "Hoàng", score: 2 }, { name: "Long", score: 4 }],
-    [{ name: "Tú", score: 100 }, { name: "Linh", score: 10 }],
-    [{ name: "Ngọc", score: 1 }, { name: "Long Lê", score: 9 }]
-]
-function sortedArray(array) {
-    let resultArray = []
-    array.forEach(item => {
-        item.forEach(x => resultArray.push(x))
-    });
-
-    resultArray.sort((a, b) => {
-        return a.score - b.score;
-    })
-    console.log(resultArray)
-}
-sortedArray(array)
-//2
+//1
 let newArray = [
     ["Bai_01", "Bai_02", "Bai_03", "Bai_04"],
     ["Bai_01", "Bai_03"],
@@ -23,7 +6,6 @@ let newArray = [
     ["Bai_04", "Bai_02", "Bai_03", "Bai_01"],
     ["Bai_04", "Bai_03", "Bai_02", "Bai_01"]
 ]
-
 function searchObject(key,newArray,resultObject){
     console.log(key)
     for(let i=0;i<newArray.length;i++){
@@ -59,4 +41,33 @@ function newArrayFunction(newArray) {
 }
 
 newArrayFunction(newArray)
+//2
+let profileObject= this.document.getElementById("Profile");
+console.log(profileObject)
+profileObject.addEventListener("click",function(){
+    document.getElementById("context2").style.backgroundColor=" #2F80ED"
+    document.getElementById("context2").innerHTML=`
+        <div style="text-align:center; color:aliceblue">Success metrics</div>
+    <ul>
+       <li>Monthly Active Users Sending Invites</li> 
+        <li>Invitees per Inviter</li>
+       <li> Conversion Rate to New User</li>
+       <li>Conversion Rate to New Guest</li> 
+        <li>Conversion Rate to New Host</li>
+        <li>Revenue Impact Potential</li>
+    </ul>
 
+    `
+})
+let homeObject=this.document.getElementById("Home");
+homeObject.addEventListener("click",function(){
+    document.getElementById("context2").innerHTML=``
+    document.getElementById("context2").style.backgroundColor=""
+})
+
+let inputObject=this.document.getElementsByClassName("input")
+inputObject[0].addEventListener("change",function(e){
+
+    document.getElementById("context1").innerHTML+=e.target.value+"<br>";
+    document.getElementById("context1").style.color="#2474E5";
+})
