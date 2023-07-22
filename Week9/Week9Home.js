@@ -65,6 +65,7 @@ homeObject.addEventListener("click",function(){
     document.getElementById("context2").style.backgroundColor=""
     document.getElementById("context1").innerHTML="";
     document.getElementById("context1").style.color="";
+    document.getElementById("context1").style.backgroundColor="";
 })
 
 let inputObject=this.document.getElementsByClassName("input")
@@ -72,4 +73,12 @@ inputObject[0].addEventListener("change",function(e){
 
     document.getElementById("context1").innerHTML+=e.target.value+"<br>";
     document.getElementById("context1").style.color="#2474E5";
+
+    //------------------------------------------------------------
+    let randomCount=Math.floor(Math.random() * 3);
+    switch (randomCount){
+        case 0: document.getElementById("context1").style.backgroundColor="#F4A4A4";break;
+        case 1: document.getElementById("context1").style.backgroundColor="#fff0d6";break;
+        case 2: document.getElementById("context1").style.backgroundColor="#141414";break;
+    }
 })
