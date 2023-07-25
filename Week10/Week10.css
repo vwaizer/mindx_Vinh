@@ -93,3 +93,38 @@ input {
     display: none;
 
 }
+#contextLogin{
+    box-sizing: border-box;
+    width: 600px;
+    height: 250px;
+    background-color: whitesmoke;
+    left: 400px;
+    top: 200px;
+    position: relative;
+    padding: 10px;
+    
+}
+#contextLogin>h1{
+    padding-left: 0px;
+}
+.loginPage{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+a{
+    color: greenyellow;
+    
+}
+a:hover{
+    cursor: pointer;
+    color: purple;
+}
+.belowLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
