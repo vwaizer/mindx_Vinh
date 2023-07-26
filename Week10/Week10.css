@@ -92,6 +92,7 @@ input {
 .replace {
     display: none;
 
+
 }
 #contextLogin{
     box-sizing: border-box;
@@ -125,6 +126,11 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.container7{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
 
 
