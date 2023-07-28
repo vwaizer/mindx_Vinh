@@ -6,7 +6,7 @@ function limit(element)
         element.value = element.value.substr(0, max_chars);
     }
 }
-var countDownDate = new Date("Jul 28, 2023 16:00:00").getTime();
+var countDownDate = new Date("Jul 30, 2023 16:00:00").getTime();
 
     
     var timeFunction = setInterval(function() {
@@ -40,11 +40,17 @@ function checkFunction(){
     }
     if(answer.includes(input) == true && inputString.includes(input) == false){
         inputString+=input;
-        document.getElementById(`${input}`).innerHTML=input;
+       
         correctCounter--;
+        document.getElementById(`${input}`).innerHTML=input;
         if(correctCounter == 0)
         {
+            clearInterval(timeFunction);
+            document.getElementById("inputChar").disabled=true;
+            document.getElementById("button").disabled=true;
             alert("Thành công");
+            
+
             return;
         }
     }
