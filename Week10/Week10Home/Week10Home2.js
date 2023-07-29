@@ -6,16 +6,18 @@ function limit(element)
         element.value = element.value.substr(0, max_chars);
     }
 }
-var countDownDate = new Date("Jul 30, 2023 16:00:00").getTime();
+
+function timeFunction(timeLeft){
+    // var countDownDate = new Date("Jul 30, 2023 1:00:00").getTime();
 
     
-    var timeFunction = setInterval(function() {
+     var timeFunction = setInterval(function() {
 
-    var now = new Date().getTime();
-    var timeLeft = countDownDate - now;
-        
+    // var now = new Date().getTime();
+    // var timeLeft = countDownDate - now;
+        timeLeft--;
   
-    timeLeft=Math.floor((timeLeft % (1000 * 60)) / 1000);
+    // timeLeft=Math.floor((timeLeft % (1000 * 60)) / 1000);
     // Display the message when countdown is over
     if (timeLeft == 0) {
         clearInterval(timeFunction);
@@ -26,13 +28,15 @@ var countDownDate = new Date("Jul 30, 2023 16:00:00").getTime();
     }
     else{
        
-        document.getElementById("timeLeft").innerHTML= `Time left: ${timeLeft}` ;
+        document.getElementById("timeLeft").innerHTML= timeLeft ;
     }
     }, 1000);
+}
 let answer="abcdefg";
 let counterButton=3;
-let correctCounter=7;
+let correctCounter=answer.length;
 let inputString="";
+timeFunction(59);
 function checkFunction(){
     let input=document.getElementById("inputChar").value;
     if(input == ""){
@@ -60,6 +64,7 @@ function checkFunction(){
         document.getElementById("counter").innerHTML=`You have <span style=" color: red;">${counterButton} </span> guess(es)remaining`
         if(counterButton == 0)
         {
+            clearInterval(timeFunction);
             document.getElementById("inputChar").disabled=true;
             document.getElementById("button").disabled=true;
         }

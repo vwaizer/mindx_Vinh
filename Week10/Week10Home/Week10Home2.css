@@ -12,10 +12,10 @@
    width: 100%;
     
 }
-#timeLeft{
+.timeLeft{
     position: relative;
     left: 1250px;
-    width: 100%;
+    width: fit-content;
 }
 *{
     box-sizing: border-box;
